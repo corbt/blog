@@ -1,0 +1,17 @@
+---
+layout: default
+title: All Posts
+---
+
+.content.container
+  h1 All Posts
+
+  ul.all-posts-list
+    |  {% for post in site.posts %} 
+    li.post-link
+      a.post-title[href="{{ post.url }}"]
+        |  {{ post.title }} 
+        span.post-date
+          | {{ post.date | date_to_string }}
+      div.post-excerpt {{ post.excerpt }}
+    |  {% endfor %} 

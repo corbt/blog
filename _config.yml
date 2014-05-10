@@ -1,9 +1,7 @@
 name: Corbt
 markdown: redcarpet
 highlighter: rouge
-destination: _site/blog
-baseurl: /blog
-# relative_permalinks: true
+permalink: /posts/:categories/:year/:month/:day/:title.html
 
 exclude: 
   - Rakefile
