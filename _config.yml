@@ -1,0 +1,20 @@
+name: Corbt
+markdown: redcarpet
+highlighter: rouge
+destination: _site/blog
+baseurl: /blog
+# relative_permalinks: true
+
+exclude: 
+  - Rakefile
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - LICENSE
+
+environments:
+  prod:
+    path: /var/www
+    remote:
+      connection: corbt
+      path: /var/www/blog

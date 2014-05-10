@@ -1,0 +1,40 @@
+doctype html
+html
+  head
+    meta[charset="utf-8"]
+    meta[http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"]
+    title
+      | {{ page.title }} - {{ site.name }} blog
+    meta[name="viewport" content="width=device-width"]
+    link[rel="stylesheet" href="/blog/css/syntax.css"]
+    link[rel="stylesheet" href="/blog/css/main.css"]
+    link[rel="stylesheet" href="/blog/css/responsive.css"]
+    link[href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700" rel="stylesheet" type="text/css"]
+    link[href="http://fonts.googleapis.com/css?family=Raleway:300,400,700" rel="stylesheet" type="text/css"]
+    | {% include analytics.html %}
+    | {% MetaDescription %}
+  body
+    .site
+      #sidebar.sidebar
+        .header
+          h1.title
+            a[href="/"]
+              img#logo[src="http://corbt.s3-website-us-east-1.amazonaws.com/assets/me.png"]
+          span.tagline
+            | Hi, I'm Kyle Corbitt. I'm interested in web development, machine learning, data visualization and anywhere those intersect.
+        .posts
+          ul.posts-list
+            |  {% for post in site.posts limit: 3 %} 
+            li.post-link
+              a.post-title[href="{{site.baseurl}}{{ post.url }}"]
+                |  {{ post.title }} 
+                span.post-date
+                  | {{ post.date | date_to_string }}
+            |  {% endfor %} 
+        .footer
+          span#footer-links
+            a.footer-link[href="http://corbt.com/about"] About
+            span.separator  • 
+            a.footer-link[href="https://github.com/corbt"] GitHub
+      |  {{ content }} 
+    script[src="/blog/scripts/responsive.js" type="text/javascript"]

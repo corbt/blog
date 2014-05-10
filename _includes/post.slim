@@ -1,0 +1,27 @@
+#home.content
+  #sidebar-button
+    img[src="http://corbt.s3-website-us-east-1.amazonaws.com/blog/sidebar-button.png"]
+  #post-info
+    #cover-photo-container
+      img#cover-photo[src="http://corbt.s3-website-us-east-1.amazonaws.com/blog/thames.png"]
+    #info-container
+      h1#title
+        | {{ page.title }}
+      span#date
+        | {{ page.date | date_to_string }}
+  .post
+    |  {{ content }} 
+  .colophon
+    p
+      span#pub-date
+        | Published on {{ page.date | date_to_string }}
+
+  | {% include disqus.html %}
+
+/ span.separator
+/   | •
+/ span#social
+/   | Find me on 
+/   a[href=""]
+/     | Twitter
+/   | !
