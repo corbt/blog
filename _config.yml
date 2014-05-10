@@ -1,6 +1,7 @@
 name: Corbt
 markdown: redcarpet
 highlighter: rouge
+destination: _site
 permalink: /posts/:categories/:year/:month/:day/:title.html
 
 exclude: 
@@ -12,7 +13,6 @@ exclude:
 
 environments:
   prod:
-    path: /var/www
     remote:
       connection: corbt
-      path: /var/www/blog
+      path: /var/www/corbt
