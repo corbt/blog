@@ -244,7 +244,7 @@ a:hover {
 
 .post-title {
   font-weight: 600;
-  font-size: 1.4em;
+  font-size: 1.2em;
   text-transform: uppercase;
 }
 
@@ -252,7 +252,7 @@ a:hover {
   color: #8a8a8a;
   font-family: Monaco, "Courier New", monospace;
   font-weight: 600;
-  font-size: 0.65em;
+  font-size: 0.8em;
   display: block;
   text-transform: lowercase;
 }
@@ -329,4 +329,15 @@ a:hover {
   .post-excerpt {
     line-height: normal;
   }
+
+  .post-title {
+    font-size: 1.4em;
+  }
+  .post-date {
+    font-size: 0.65em;
+  }
+}
+
+.about-me p {
+  text-align: left;
 }
