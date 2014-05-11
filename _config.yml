@@ -1,7 +1,7 @@
 name: Corbt
 markdown: redcarpet
 highlighter: rouge
-destination: _site
+destination: /tmp/site
 permalink: /posts/:categories/:year/:month/:day/:title.html
 
 exclude: 
