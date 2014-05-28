@@ -7,7 +7,7 @@ As a primer in graph analysis and clustering, I decided to map the relationships
 
 Here's the final product.  Read on for how it was generated.
 
-![Countries in the Twitterverse](http://corbt.s3-website-us-east-1.amazonaws.com/blog/twitter_countries.png)
+![Countries in the Twitterverse](//corbt.s3.amazonaws.com/blog/twitter_countries.png)
 
 Getting the Data
 --------
@@ -16,7 +16,7 @@ Twitter's [API](https://dev.twitter.com/docs/api) is well documented and quite p
 The first step was procuring a representative sample of Twitter users.  By connecting to the sample streaming API I was able to pull about 100,000 individual tweets in 24 hours, even when filtering for only those with location data included.  Collecting data for a full 24 hours at a minimum is important because different parts of the world are active at different times of day (apparently even avid Twitter users need to sleep! :).
 
 *Heatmap of Collected Tweets*
-![Heatmap of Tweets](http://corbt.s3-website-us-east-1.amazonaws.com/blog/twitter_heatmap.png)
+![Heatmap of Tweets](//corbt.s3.amazonaws.com/blog/twitter_heatmap.png)
 
 ###Data Processing
 Once I had my truckload of data, I had to pare it down.  Mapping followers requires actually *getting* followers first, and at the 1 request/minute Twitter API rate limit pulling followers for my whole 100,000 user sample would have taken 69.4 days, which didn't sound like my favorite plan.  Instead I wrote a script to randomly sample 5000 users from the set to make the process more manageable.  I then was able to pull the followers for those 5000 users in about 4 days, a slightly more reasonable timeframe.
@@ -31,7 +31,7 @@ Actual analysis of the graph was done in [Gephi](https://gephi.org/).  Gephi is 
 
 Finally, I experimented with different clustering algorithms to try and bring some order to the graph.  I began with OpenOrd, which apparently works well for larger graphs but got completely flummoxed on one with only about 80 nodes.  After trying a few more I found good results with Force Atlas 2 (selecting the LinLog and Prevent Overlap modes) that induced some reasonable clusters in the graph.
 
-![Countries in the Twitterverse](http://corbt.s3-website-us-east-1.amazonaws.com/blog/twitter_countries_original.png)
+![Countries in the Twitterverse](//corbt.s3.amazonaws.com/blog/twitter_countries_original.png)
 
 Some definite communities are apparent in the final product.  Latin America was the first one that jumped out to me.  All the Spanish-speaking American countries, as well as Spain, are grouped at the top of the frame.  In fact, the only American-continent nations to escape the cluster are The Bahamas, Trinidad and Tobago, Dominica, the United States and Canada, all of which speak English.
 

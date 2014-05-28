@@ -14,12 +14,12 @@ Climate change can be a bit of a controversial topic, and so it's relevant for m
 I defined stations suitable for inclusion as those with at least one full year of data between 1950 and 1954, and at least a full year of data between 2008 and 2013 (most included stations had 4 or 5 years of available data in both periods). Of the 1686 stations that fit these criteria, 1222, or 72%, are located in the USA.
 
 The mean increase was 0.58&deg;C, and the median was 0.66&deg;C. A histogram of the temperature change at each station shows a fairly normal distribution, centered between 0.5 and 1 degree.
-![Average Temperature Change, 1950-2010](http://corbt.s3-website-us-east-1.amazonaws.com/blog/temp_change.png)
+![Average Temperature Change, 1950-2010](//corbt.s3.amazonaws.com/blog/temp_change.png)
 
 ### Visualization
 A map of temperature changes by station is below. Clicking on a marker pulls up a 60-year trend line for that station. As you browse, you'll find that the data is at times sparse (years or entire decades missing) or noisy (the mean temperature doesn't always stay between the min and max). These are reflections of the underlying dataset, not a result of my processing. :) 
 
-<iframe src="http://corbt.s3-website-us-east-1.amazonaws.com/weather/historical_map/map.html" style="width:100%;height:500px;border:0;"></iframe>
+<iframe src="//corbt.s3.amazonaws.com/weather/historical_map/map.html" style="width:100%;height:500px;border:0;"></iframe>
 [(fullscreen)](http://corbt.s3-website-us-east-1.amazonaws.com/weather/historical_map/map.html)
 
 ### Code

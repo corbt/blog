@@ -12,7 +12,7 @@ I set the color of each marker based on its similarity to other markers in the d
 
 By clicking on a marker, you can see the minimum, maximum and average monthly temperatures of that station, averaged over the last 15 years.
 
-<iframe src="http://corbt.s3-website-us-east-1.amazonaws.com/weather/viz/map.html" style="width:100%;height:500px;border:0;"></iframe>
+<iframe src="//corbt.s3.amazonaws.com/weather/viz/map.html" style="width:100%;height:500px;border:0;"></iframe>
 [(fullscreen)](http://corbt.s3-website-us-east-1.amazonaws.com/weather/viz/map.html)
 
 Read on to learn more about how this graphic was created. I've released the source on [Github](https://github.com/kcorbitt/city-weather), so feel free to follow along!

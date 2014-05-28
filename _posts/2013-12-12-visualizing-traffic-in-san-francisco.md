@@ -10,14 +10,14 @@ The actual machine learning involved was fairly straightforward, and you can get
 The most interesting deliverable was a couple of visualizations I came up with as a byproduct of the actual machine learning.  The first was a simple chart comparing hour of the day (0-24) to average traffic level over the two weeks I collected data for.
 
 *Traffic level vs Hour of the Day*
-![Traffic level vs Hour of the Day](http://corbt.s3-website-us-east-1.amazonaws.com/blog/hour_vs_traffic_level.png)
+![Traffic level vs Hour of the Day](//corbt.s3.amazonaws.com/blog/hour_vs_traffic_level.png)
 
 This matches intuition -- traffic is worse at night than in the morning, and peaks at the morning and evening rush hour.
 
 The second image is a correlation between the current traffic level and that of the previous hour.
 
 *Traffic level Correlation Over Time*
-![Traffic level Correlation Over Time](http://corbt.s3-website-us-east-1.amazonaws.com/blog/prev_traffic_correlation.png)
+![Traffic level Correlation Over Time](//corbt.s3.amazonaws.com/blog/prev_traffic_correlation.png)
 
 This gives a good feel for how quickly the level of traffic changes over time.  Each successive scatterplot shows the relationship between current and past traffic in 10 minute increments.  The last graph, for example, shows the correlation between current traffic and traffic an hour ago.
 
