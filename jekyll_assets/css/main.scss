@@ -171,12 +171,15 @@ a:hover {
   padding: 0 .4em;
 }
 
-.content p {
+.content {
   font-family: 'Source Sans Pro', Arial, sans-serif;
-  font-size: 1.1em;
-  margin-bottom: 1.45em;
-  text-align: justify;
+  font-size: 1.4em;
+  // text-align: justify;
   line-height: 1.7em;
+
+  p {
+    margin-bottom: 1.45em;
+  }
 }
 
 .post ul, .post ol {
