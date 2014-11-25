@@ -1,5 +1,5 @@
 name: Corbt
-markdown: redcarpet
+markdown: kramdown
 highlighter: rouge
 destination: /tmp/site
 permalink: /posts/:categories/:year/:month/:day/:title.html

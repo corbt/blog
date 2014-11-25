@@ -84,6 +84,6 @@ DEPENDENCIES
   html2slim (= 0.0.5)
   jekyll
   jekyll-slim
-  redcarpet
+  kramdown
   rouge
   sanitize
