@@ -15,4 +15,4 @@ environments:
   prod:
     remote:
       connection: corbt
-      path: /var/www/corbt
+      path: /srv/www/corbt
