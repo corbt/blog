@@ -1,13 +1,14 @@
 name: Corbt
 markdown: kramdown
 highlighter: rouge
-destination: /tmp/site
+destination: _site
 permalink: /posts/:categories/:year/:month/:day/:title.html
 
 exclude: 
   - Rakefile
   - Gemfile
   - Gemfile.lock
+  - Guardfile
   - README.md
   - LICENSE
 
@@ -16,3 +17,7 @@ environments:
     remote:
       connection: corbt
       path: /srv/www/corbt
+
+
+slim:
+  pretty: true

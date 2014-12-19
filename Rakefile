@@ -29,10 +29,10 @@ env = ENV['env'] || 'prod'
 
 desc "update the blog"
 task :push do
-  command = "jekyll build && rsync -avz "
+  command = "JEKYLL_ENV=production jekyll build && rsync -avz "
   unless config['environments'][env]['remote']['port'].nil?
     command << "-e 'ssh -p #{config['environments'][env]['remote']['port']}' "
   end
-  command << "#{config['destination']}/ #{config['environments'][env]['remote']['connection']}:#{config['environments'][env]['remote']['path']}"
+  command << "./#{config['destination']}/ #{config['environments'][env]['remote']['connection']}:#{config['environments'][env]['remote']['path']}"
   sh command
 end

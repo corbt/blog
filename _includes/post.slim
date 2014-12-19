@@ -5,8 +5,8 @@
     #info-container
       h1#title
         | {{ page.title }}
-      span#date
-        | {{ page.date | date_to_string }}
+      / span#date
+        / | {{ page.date | date_to_string }}
   .post
     |  {{ content }} 
   .colophon
