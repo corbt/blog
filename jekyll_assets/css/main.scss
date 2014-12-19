@@ -45,6 +45,13 @@ a:hover {
   color: #555;
 }
 
+sup, sub {
+   vertical-align: baseline;
+   position: relative;
+   top: -0.4em;
+}
+sub { top: 0.4em; }
+
 /*****************************************************************************/
 /*
 /* Home
@@ -155,10 +162,10 @@ a:hover {
   margin-bottom: 1.25em;
 }
 
-.post a,
-#about a {
-  border-bottom: 1px dashed #8085C1;
-}
+// .post a,
+// #about a {
+//   border-bottom: 1px dashed #8085C1;
+// }
 
 .post a:hover {
   border: none;
@@ -169,6 +176,7 @@ a:hover {
   border: 1px solid #ddd;
   background-color: #eef;
   padding: 0 .4em;
+  line-height: 1.3em;
 }
 
 .content {
