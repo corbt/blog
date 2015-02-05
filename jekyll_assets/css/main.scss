@@ -185,8 +185,8 @@ sub { top: 0.4em; }
   // text-align: justify;
   line-height: 1.7em;
 
-  p {
-    margin-bottom: 1.45em;
+  p, pre {
+    margin: 1.45em 0;
   }
 }
 
