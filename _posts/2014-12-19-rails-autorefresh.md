@@ -5,7 +5,7 @@ title: Rails Auto-Refresh
 comments: true
 ---
 
-In my [last post]({% post_url 2014-12-18-clojure-for-rails-programmers %}) I discussed some of the attractive elements of the Clojure ecosystem. The primary KapShare app is still written in Rails and that's still where most development happens, so I decided to take some time to enable the auto-refresh functionality built into Clojure's [Ring](https://github.com/ring-clojure). Rails already gets us halfway there by automatically reloading updated files on the server, but by following these steps any open pages will also automatically refresh when code is updated in development.
+In my [last post]({% post_url 2014-12-18-clojure-for-rails-programmers %}) I discussed some of the attractive elements of the Clojure ecosystem. The primary Emberall app is still written in Rails and that's still where most development happens, so I decided to take some time to enable the auto-refresh functionality built into Clojure's [Ring](https://github.com/ring-clojure). Rails already gets us halfway there by automatically reloading updated files on the server, but by following these steps any open pages will also automatically refresh when code is updated in development.
 
 ### Installing the Gems
 Add the following two gems to your `Gemfile`, then run `bundle` and `bundle binstub guard`:

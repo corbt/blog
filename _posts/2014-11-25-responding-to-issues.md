@@ -4,7 +4,7 @@ published: true
 title: Responding to Issues
 comments: true
 ---
-This morning I got an email from [New Relic](http://newrelic.com/) informing me that the CPU load on Kapshare's staging server had been over 80% for over 5 minutes. It's not unusual for the CPU to peg pretty high during video reencoding, and even to hit 100% for a limited time when a user has uploaded a lot of videos at once and they're all being processed. But this was on the staging server, which only I use, and I hadn't done any uploads this morning.
+This morning I got an email from [New Relic](http://newrelic.com/) informing me that the CPU load on Emberall's staging server had been over 80% for over 5 minutes. It's not unusual for the CPU to peg pretty high during video reencoding, and even to hit 100% for a limited time when a user has uploaded a lot of videos at once and they're all being processed. But this was on the staging server, which only I use, and I hadn't done any uploads this morning.
 
 After checking that the server was still responding to requests, I logged into New Relic to see if I could quickly get any insight into the issue.
 

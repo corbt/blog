@@ -5,7 +5,7 @@ title: Clojure for Rails Programmers
 comments: true
 ---
 
-I've been experimenting with Clojure for a new product we're working on at [KapShare](http://kapshare.com). We're already using [React](http://facebook.github.io/react/) fairly extensively in our front-end code in the main app, and I became intrigued by the possibilities of [Reagent](https://github.com/reagent-project/reagent), a ClojureScript wrapper for the framework. 
+I've been experimenting with Clojure for a new product we're working on at [Emberall](http://emberall.com). We're already using [React](http://facebook.github.io/react/) fairly extensively in our front-end code in the main app, and I became intrigued by the possibilities of [Reagent](https://github.com/reagent-project/reagent), a ClojureScript wrapper for the framework. 
 
 As the design of the product evolved we decided to go with a native Android app for the frontend instead of a web app, backed by a simple API-focused backend. Since it's a small, standalone service I decided it was low-risk enough to implement the backend in Clojure anyway, and take advantage of the opportunity to learn a new language and paradigm.
 
