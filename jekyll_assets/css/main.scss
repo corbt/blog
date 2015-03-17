@@ -216,6 +216,14 @@ sub { top: 0.4em; }
   background-color: #333;
 }
 
+blockquote {
+  margin-left: 10px;
+  padding-left: 10px;
+  border-left: 5px solid rgb(229, 226, 226);
+
+  color: rgb(87, 86, 86);
+}
+
 /*****************************************************************************/
 /*
 /* Sidebar and Content
