@@ -1,6 +1,7 @@
 require 'rubygems'
 require 'optparse'
 require 'yaml'
+require 'guard'
 
 desc "create new post"
 task :np do
@@ -15,11 +16,16 @@ task :np do
     puts "[WARN] File exists - skipping create"
   else
     File.open(path, "w") do |file|
-      file.puts YAML.dump({'layout' => 'post', 'published' => false, 'title' => title, 'comments' => true})
+      file.puts YAML.dump({'layout' => 'post', 'published' => true, 'title' => title, 'comments' => true})
       file.puts "---"
     end
   end
   exit 1
+end
+
+desc "serve files"
+task :serve do
+  `guard`
 end
 
 config_file = '_config.yml'
