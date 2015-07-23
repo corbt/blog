@@ -24,13 +24,12 @@ prev = repo.log.first
 deletions = 0
 insertions = 0
 repo.log(count = 5000).each do |commit|
-  stats = repo.diff(commit, prev).stats[:files]
-  deletions += stats
-                .select { |f| f =~ /.*(rb)|(jsx)|(scss)|(yml)/ }
-                .inject(0) { |sum, f| sum + f.last[:deletions] }
-  insertions += stats
-                .select { |f| f =~ /.*(rb)|(jsx)|(scss)|(yml)/ }
-                .inject(0) { |sum, f| sum + f.last[:insertions] }
+  source_file = /.*(rb)|(jsx)|(cljs)|(scss)|(yml)/
+  stats_files = repo.diff(commit, prev).stats[:files]
+                                    .select { |f| f =~ source_file }
+  
+  deletions += stats_files.inject(0) { |sum, f| sum + f.last[:deletions] }
+  insertions += stats_files.inject(0) { |sum, f| sum + f.last[:insertions] }
 
   prev = commit
 end
