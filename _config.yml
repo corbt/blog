@@ -21,3 +21,7 @@ environments:
 
 slim:
   pretty: true
+
+kramdown:
+  input: GFM
+  coderay_line_numbers: nil
