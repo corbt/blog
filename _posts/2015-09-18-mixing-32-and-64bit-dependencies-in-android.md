@@ -22,7 +22,8 @@ The best solution I've found so far (and be warned: it's a nasty hack) is to sim
 
 1. Generate an APK with the mixed binaries, like normal.
 2. Unzip the .apk file (`unzip *.apk` from the command line works fine) and examine the `lib/arm64-v8a` directory. (If the directory doesn't exist, you have no packaged ARM64 libraries, and shouldn't have a problem.)
-3. Add the following block to your `build.gradle` file, adding an `exclude` line for every 64-bit dependency you found in step 2.
+3. In your `gradle.properties` in the project root, add the line `android.useDeprecatedNdk=true`.
+4. Add the following block to your `build.gradle` file, adding an `exclude` line for every 64-bit dependency you found in step 2.
 
 ```groovy
 android {
