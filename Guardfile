@@ -7,6 +7,7 @@ watch ("Guardfile") do
 end
 
 guard 'jekyll-plus', serve: true do
+  callback(:start_end) { `open http://localhost:4000` }
   watch /.*/
   ignore /_site/
 end
