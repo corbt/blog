@@ -41,6 +41,6 @@ export default function settings(state = new SettingsRecord(), action) {
 }
 ```
 
-Essentially, we handle redux-persist's `REHYDRATE` action by creating a new `Record` with all the data from the one we had saved to disk.
+Essentially, we handle redux-persist's `REHYDRATE` action by creating a new `Record` with all the values that redux-persist restored from disk.
 
-While this is slightly more verbose than having the data rehydrated automagically, in any non-trivial app you'll probably need to handle the `REHYDRATE` action anyway, because that's the best place to perform any necessary migrations as you update and change the shape of your data.
+While this is slightly more verbose than having the data rehydrated into an instance of our `Record` type automagically, in any non-trivial app you'll probably need to handle the `REHYDRATE` action anyway, because that's the best place to perform any necessary migrations as you update and change the shape of your data.
