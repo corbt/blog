@@ -35,9 +35,8 @@ export default function settings(state = new SettingsRecord(), action) {
         return new SettingsRecord(action.payload);
     // handle other actions here
     // ...
-    default:
-      return state;
   }
+  return state;
 }
 ```
 
