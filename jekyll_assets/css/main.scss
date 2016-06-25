@@ -339,7 +339,7 @@ blockquote {
   li {
     // text-align: center;
     line-height: 1.75em;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
   }
   a {
     color: #444;
@@ -347,6 +347,7 @@ blockquote {
 
   .post-excerpt {
     line-height: normal;
+    margin-top: -26px;
   }
 
   .post-title {

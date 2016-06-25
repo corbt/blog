@@ -14,5 +14,5 @@ title: All Posts
           |  {{ post.title }} 
           span.post-date
             | {{ post.date | date_to_string }}
-        div.post-excerpt {{ post.excerpt }}
+        div.post-excerpt {{ post.excerpt | strip_footnotes }}
       |  {% endfor %} 
