@@ -3,8 +3,9 @@ markdown: kramdown
 highlighter: rouge
 destination: _site
 permalink: /posts/:categories/:year/:month/:day/:title.html
+url: https://corbt.com
 
-exclude: 
+exclude:
   - Rakefile
   - Gemfile
   - Gemfile.lock
